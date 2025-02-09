@@ -1,4 +1,6 @@
-﻿namespace learningCSharp
+﻿using System;
+
+namespace learningCSharp
 {
     class Program
     {
