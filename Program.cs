@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace learningCSharp
 {
@@ -20,7 +21,32 @@ namespace learningCSharp
             // BasicCalculation.Calculation();
             // ChangeTemperature.CelsiusToFahrenheit();
             // FindVowelConsonant.VowelConsonant();
-            Car.MyCar();
+
+            List<Animal> animals = new List<Animal>(); // Polymorphism: List of base class can hold derived class objects
+
+            Dog myDog = new Dog("Budy", "Brown", 5, "Golden Retriever");
+            Cat myCat = new Cat("Whiskers", "White", 3, "Black");
+            Animal myAnimal = new Animal("Generic", "Animal", "Rainbow", 6);
+
+            animals.Add(myDog);
+            animals.Add(myCat);
+            animals.Add(myAnimal);
+
+            foreach (Animal animal in animals)
+            {
+                Console.WriteLine(animal);
+                animal.MakeSound();
+
+                if(animal is Dog dog)
+                {
+                    dog.Fetch();
+                }else if (animal is Cat cat)
+                {
+                    cat.Purr();
+                }
+                Console.WriteLine();
+            }
+
         }
     }
 }

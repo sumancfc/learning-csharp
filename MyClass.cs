@@ -1,25 +1,68 @@
-namespace learningCSharp;
-
-// Class Members: Fields and methods inside classes are often referred to as "class members".
-public class Car
+// Base Class: Animal
+public class Animal
 {
-     string model;
-     string color;
-     int year;
+    public string Name { get; set; }
+    public string Species { get; set; }
+    public string Color { get; set; }
+    public int Age { get; set; }
 
-     public static void MyCar()
-     {
-         Car Ford = new Car();
-         Ford.model = "Mustang";
-         Ford.color = "red";
-         Ford.year = 1969;
+    public Animal(string name, string species, string color, int age)
+    {
+        Name = name;
+        Species = species;
+        Color = color;
+        Age = age;
+    }
 
-         Car Opel = new Car();
-         Opel.model = "Astra";
-         Opel.color = "white";
-         Opel.year = 2005;
+    public virtual void MakeSound() // Virtual for overriding in derived classes
+    {
+        Console.WriteLine("Generic animal sound");
+    }
 
-         Console.WriteLine($"My car is a {Ford.year} {Ford.color} {Ford.model}.");
-         Console.WriteLine($"My other car is a {Opel.year} {Opel.color} {Opel.model}.");
-     }
+    public override string ToString() // Override ToString for better output
+    {
+        return $"Name: {Name}, Species: {Species}, Color: {Color}, Age: {Age}";
+    }
+}
+
+// Derived Class: Dog (inherits from Animal)
+public class Dog : Animal
+{
+  public string Breed { get; set; }
+
+  public Dog(string name, string color, int age, string breed) : base(name, "Canine", color, age)
+  {
+      Breed = breed;
+  }
+
+  public override void MakeSound() // Override the base class method
+  {
+      Console.WriteLine("Woof!");
+  }
+
+  public void Fetch()
+  {
+      Console.WriteLine($"{Name} is fetching the ball!");
+  }
+}
+
+// Derived Class: Cat (inherits from Animal)
+public class Cat : Animal
+{
+    public string EyeColor { get; set; }
+
+    public Cat(string name, string color, int age, string eyeColor) : base(name, "Feline", color, age)
+    {
+        EyeColor = eyeColor;
+    }
+
+    public override void MakeSound() // Override the base class method
+    {
+        Console.WriteLine("Meow!");
+    }
+
+    public void Purr()
+    {
+        Console.WriteLine($"{Name} is purring.");
+    }
 }
