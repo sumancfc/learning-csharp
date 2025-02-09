@@ -1,0 +1,14 @@
+/Users/susman/Desktop/Projects/learningCSharp/learningCSharp/bin/Debug/net9.0/learningCSharp
+/Users/susman/Desktop/Projects/learningCSharp/learningCSharp/bin/Debug/net9.0/learningCSharp.deps.json
+/Users/susman/Desktop/Projects/learningCSharp/learningCSharp/bin/Debug/net9.0/learningCSharp.runtimeconfig.json
+/Users/susman/Desktop/Projects/learningCSharp/learningCSharp/bin/Debug/net9.0/learningCSharp.dll
+/Users/susman/Desktop/Projects/learningCSharp/learningCSharp/bin/Debug/net9.0/learningCSharp.pdb
+/Users/susman/Desktop/Projects/learningCSharp/learningCSharp/obj/Debug/net9.0/learningCSharp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/susman/Desktop/Projects/learningCSharp/learningCSharp/obj/Debug/net9.0/learningCSharp.AssemblyInfoInputs.cache
+/Users/susman/Desktop/Projects/learningCSharp/learningCSharp/obj/Debug/net9.0/learningCSharp.AssemblyInfo.cs
+/Users/susman/Desktop/Projects/learningCSharp/learningCSharp/obj/Debug/net9.0/learningCSharp.csproj.CoreCompileInputs.cache
+/Users/susman/Desktop/Projects/learningCSharp/learningCSharp/obj/Debug/net9.0/learningCSharp.dll
+/Users/susman/Desktop/Projects/learningCSharp/learningCSharp/obj/Debug/net9.0/refint/learningCSharp.dll
+/Users/susman/Desktop/Projects/learningCSharp/learningCSharp/obj/Debug/net9.0/learningCSharp.pdb
+/Users/susman/Desktop/Projects/learningCSharp/learningCSharp/obj/Debug/net9.0/learningCSharp.genruntimeconfig.cache
+/Users/susman/Desktop/Projects/learningCSharp/learningCSharp/obj/Debug/net9.0/ref/learningCSharp.dll

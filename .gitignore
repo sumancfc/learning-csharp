@@ -1,0 +1,66 @@
+# Ignore Visual Studio & Rider IDE-specific files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vs/
+
+# Ignore build outputs
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.pdb
+*.app/
+*.ipa/
+*.iobj
+*.ipdb
+*.ilk
+*.rsp
+*.nupkg
+*.snupkg
+*.nuspec
+
+# Ignore dependency manager folders
+node_modules/
+packages/
+project.lock.json
+project.assets.json
+global.json
+
+# Ignore temporary files
+*.tmp
+*.log
+*.cache
+*.swp
+*.bak
+*.pid
+*.seed
+*.svclog
+
+# Ignore Rider / JetBrains files
+.idea/
+*.sln.iml
+
+# Ignore NuGet Packages
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+# Ignore Mac and Linux system files
+.DS_Store
+*.DS_Store
+._*
+*.Spotlight-V100
+.Trashes
+*.nfs*
+
+# Ignore user secrets and local settings
+secrets.json
+appsettings.Development.json
+
+# Ignore compiled TypeScript files (if applicable)
+**/*.tsbuildinfo
