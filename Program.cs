@@ -11,16 +11,16 @@ namespace learningCSharp
 
             /*Name and Age: Ask the user for their name and age,
              then print a message like "Hello, [name]! You are [age] years old."*/
-            Console.Write("What is your name? ");
-            string name = Console.ReadLine();
-            Console.Write("How old are you? ");
-            string age = Console.ReadLine();
-            Console.WriteLine($"Hello, {name}! You are {age} years old.");
-
-            BasicCalculation.Calculation();
-            ChangeTemperature.CelsiusToFahrenheit();
-            FindVowelConsonant.VowelConsonant();
-
+            // Console.Write("What is your name? ");
+            // string name = Console.ReadLine();
+            // Console.Write("How old are you? ");
+            // string age = Console.ReadLine();
+            // Console.WriteLine($"Hello, {name}! You are {age} years old.");
+            //
+            // BasicCalculation.Calculation();
+            // ChangeTemperature.CelsiusToFahrenheit();
+            // FindVowelConsonant.VowelConsonant();
+            Car.MyCar();
         }
     }
 }
