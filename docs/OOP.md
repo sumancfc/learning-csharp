@@ -83,11 +83,3 @@ Dog myDog = new Dog("Buddy", 3, "Golden Retriever");
 myDog.MakeSound(); // Calls the overridden method
 Console.WriteLine(myDog.Name); // Accesses the property from the base class
 ```
-
-## Polymorphism
-
-Polymorphism allows objects of different classes to be treated as objects of a common superclass. It allows methods to be called on objects without knowing their specific type.
-
-```csharp
-
-```

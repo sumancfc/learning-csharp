@@ -56,16 +56,66 @@ namespace learningCSharp
             // rectangle.CalculatePerimeter();
 
             // OOP/Shape.cs
-            List<Shape> shapes = new List<Shape>();
+            // List<Shape> shapes = new List<Shape>();
+            //
+            // shapes.Add(new Rectangle(5,10));
+            // shapes.Add(new Circle(5));
+            //
+            // foreach (Shape shape in shapes)
+            // {
+            //     Console.WriteLine($"{shape.GetShapeType()} Area: {shape.CalculateArea()}");
+            // }
 
-            shapes.Add(new Rectangle(5,10));
-            shapes.Add(new Circle(5));
-
-            foreach (Shape shape in shapes)
+            // OOP/ClassBankAccount.cs
+            try
             {
-                Console.WriteLine($"{shape.GetShapeType()} Area: {shape.CalculateArea()}");
+                ClassBankAccount account = new ClassBankAccount("123456789", 9999);
+
+                account.Deposit(1000);
+                account.Withdraw(5000);
+                account.CheckBalance();
+
+                account.Withdraw(10000); // Should throw an exception
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+            }
+            finally
+            {
+                Console.WriteLine("Bank Account operation completed.");
             }
 
         }
     }
 }
+
+// Custom Exception Class
+public class InvalidOperationException : Exception
+{
+    public InvalidOperationException() : base("Insufficient funds.")
+    {
+    }
+    public InvalidOperationException(string message) : base(message)
+    {
+    }
+    public InvalidOperationException(string message, Exception innerException) : base(message, innerException)
+    {
+    }
+}
+
+/*
+ * TODO:
+ * Design a system for a library.  You might have classes like Book, Member, Loan, etc.
+ * Think about the relationships between these classes (inheritance, composition) and
+ * how you would implement methods for borrowing and returning books.
+ * Consider using interfaces for common actions (e.g., an IBorrowable interface).
+ */
