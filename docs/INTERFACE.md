@@ -55,3 +55,44 @@ class Program
 
 - To achieve security - hide certain details and only show the important details of an object (interface).
 - C# does not support "multiple inheritance" (a class can only inherit from one base class). However, it can be achieved with interfaces, because the class can implement multiple interfaces.
+
+## Multiple Interfaces
+
+A class can inherit from multiple interfaces. This is useful when a class needs to implement multiple contracts.
+
+To implement multiple interfaces, separate them with a comma in the class declaration.
+
+```csharp
+interface IFirstInterface
+{
+    void myMethod(); // interface method
+}
+
+interface ISecondInterface
+{
+    void myOtherMethod(); // interface method
+}
+
+class DemoClass : IFirstInterface, ISecondInterface
+{
+    public void myMethod()
+    {
+        Console.WriteLine("Some text..");
+    }
+
+    public void myOtherMethod()
+    {
+        Console.WriteLine("Some Other text..");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        DemoClass myObj = new DemoClass();
+        myObj.myMethod();
+        myObj.myOtherMethod();
+    }
+}
+```
