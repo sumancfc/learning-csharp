@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using learningCSharp.LibraryManagementSystem;
 using learningCSharp.OOP;
 
 namespace learningCSharp
@@ -67,32 +68,42 @@ namespace learningCSharp
             // }
 
             // OOP/ClassBankAccount.cs
-            try
-            {
-                ClassBankAccount account = new ClassBankAccount("123456789", 9999);
+            // try
+            // {
+            //     ClassBankAccount account = new ClassBankAccount("123456789", 9999);
+            //
+            //     account.Deposit(1000);
+            //     account.Withdraw(5000);
+            //     account.CheckBalance();
+            //
+            //     account.Withdraw(10000); // Should throw an exception
+            // }
+            // catch (ArgumentException ex)
+            // {
+            //     Console.WriteLine($"Error: {ex.Message}");
+            // }
+            // catch (InvalidOperationException ex)
+            // {
+            //     Console.WriteLine($"Error: {ex.Message}");
+            // }
+            // catch(Exception ex)
+            // {
+            //     Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+            // }
+            // finally
+            // {
+            //     Console.WriteLine("Bank Account operation completed.");
+            // }
 
-                account.Deposit(1000);
-                account.Withdraw(5000);
-                account.CheckBalance();
+            Library library = new Library();
 
-                account.Withdraw(10000); // Should throw an exception
-            }
-            catch (ArgumentException ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-            }
-            catch (InvalidOperationException ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
-            }
-            finally
-            {
-                Console.WriteLine("Bank Account operation completed.");
-            }
+            Book book1 = new Book("The Hitchhiker's Guide to the Galaxy", "Douglas Adams", "978-0345391803", 1979, "Science Fiction");
+            Book book2 = new Book("Pride and Prejudice", "Jane Austen", "978-0141439518", 1813, "Romance");
+
+            library.AddItem(book1);
+            library.AddItem(book2);
+
+            library.DisplayItems();
 
         }
     }
