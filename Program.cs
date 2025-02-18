@@ -103,7 +103,25 @@ namespace learningCSharp
             library.AddItem(book1);
             library.AddItem(book2);
 
+            Member member1 = new Member("Alice Smith", "123 Main St", "alice@example.com", "M001");
+            library.AddMember(member1);
+
             library.DisplayItems();
+            library.DisplayMembers();
+
+            member1.BorrowItem(book1);
+            library.DisplayItems(); // Show borrowed status
+
+            member1.ReturnItem(book1);
+            library.DisplayItems(); // Show returned status
+
+            List<LibraryItem> foundItems = library.FindItem("pride", "title");
+            foreach (var item in foundItems)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.ReadKey();
 
         }
     }
