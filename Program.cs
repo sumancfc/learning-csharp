@@ -134,8 +134,12 @@ namespace learningCSharp
             // amount.calculatePrice();
 
             // Projects/LoginSystem.cs
-            LoginSystem login = new LoginSystem();
-            login.authenticationSystem();
+            // LoginSystem login = new LoginSystem();
+            // login.authenticationSystem();
+
+            // Projects/DesignPatterns.cs
+            DesignPatterns patterns = new DesignPatterns();
+            patterns.RunPatterns();
         }
     }
 }
