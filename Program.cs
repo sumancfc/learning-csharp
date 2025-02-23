@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using learningCSharp.LibraryManagementSystem;
 using learningCSharp.OOP;
+using learningCSharp.Projects;
 
 namespace learningCSharp
 {
@@ -95,51 +96,55 @@ namespace learningCSharp
             //     Console.WriteLine("Bank Account operation completed.");
             // }
 
-            Library library = new Library();
+            //     Library library = new Library();
+            //
+            //     Book book1 = new Book("The Hitchhiker's Guide to the Galaxy", "Douglas Adams", "978-0345391803", 1979, "Science Fiction");
+            //     Book book2 = new Book("Pride and Prejudice", "Jane Austen", "978-0141439518", 1813, "Romance");
+            //
+            //     library.AddItem(book1);
+            //     library.AddItem(book2);
+            //
+            //     Member member1 = new Member("Alice Smith", "123 Main St", "alice@example.com", "M001");
+            //     library.AddMember(member1);
+            //
+            //     library.DisplayItems();
+            //     library.DisplayMembers();
+            //
+            //     member1.BorrowItem(book1);
+            //     library.DisplayItems(); // Show borrowed status
+            //
+            //     member1.ReturnItem(book1);
+            //     library.DisplayItems(); // Show returned status
+            //
+            //     List<LibraryItem> foundItems = library.FindItem("pride", "title");
+            //     foreach (var item in foundItems)
+            //     {
+            //         Console.WriteLine(item);
+            //     }
+            //
+            //     Console.ReadKey();
+            //
+            // }
 
-            Book book1 = new Book("The Hitchhiker's Guide to the Galaxy", "Douglas Adams", "978-0345391803", 1979, "Science Fiction");
-            Book book2 = new Book("Pride and Prejudice", "Jane Austen", "978-0141439518", 1813, "Romance");
-
-            library.AddItem(book1);
-            library.AddItem(book2);
-
-            Member member1 = new Member("Alice Smith", "123 Main St", "alice@example.com", "M001");
-            library.AddMember(member1);
-
-            library.DisplayItems();
-            library.DisplayMembers();
-
-            member1.BorrowItem(book1);
-            library.DisplayItems(); // Show borrowed status
-
-            member1.ReturnItem(book1);
-            library.DisplayItems(); // Show returned status
-
-            List<LibraryItem> foundItems = library.FindItem("pride", "title");
-            foreach (var item in foundItems)
-            {
-                Console.WriteLine(item);
-            }
-
-            Console.ReadKey();
-
+            GuessNumber game = new GuessNumber();
+            game.Play();
         }
     }
 }
 
 // Custom Exception Class
-public class InvalidOperationException : Exception
-{
-    public InvalidOperationException() : base("Insufficient funds.")
-    {
-    }
-    public InvalidOperationException(string message) : base(message)
-    {
-    }
-    public InvalidOperationException(string message, Exception innerException) : base(message, innerException)
-    {
-    }
-}
+// public class InvalidOperationException : Exception
+// {
+//     public InvalidOperationException() : base("Insufficient funds.")
+//     {
+//     }
+//     public InvalidOperationException(string message) : base(message)
+//     {
+//     }
+//     public InvalidOperationException(string message, Exception innerException) : base(message, innerException)
+//     {
+//     }
+// }
 
 /*
  * TODO:
