@@ -125,9 +125,17 @@ namespace learningCSharp
             //     Console.ReadKey();
             //
             // }
+            // Projects/GuessNumber.cs
+            // GuessNumber game = new GuessNumber();
+            // game.Play();
 
-            GuessNumber game = new GuessNumber();
-            game.Play();
+            // Projects/DiscountCalculation
+            // DiscountCalculation amount = new DiscountCalculation();
+            // amount.calculatePrice();
+
+            // Projects/LoginSystem.cs
+            LoginSystem login = new LoginSystem();
+            login.authenticationSystem();
         }
     }
 }
